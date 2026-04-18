@@ -1,23 +1,24 @@
-body{
-    padding:0;
-    margin:0;
+body {
+    padding: 0;
+    margin: 0;
 }
-.df{
-display: flex;
+
+.df {
+    display: flex;
 }
 
 /* Header Cointainer CSS */
 
-header{
+header {
     background-image: url(./Assets/navBG.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height:5rem;
-    display:flex;
+    height: 5rem;
+    display: flex;
     align-items: center;
 }
 
-nav{
+nav {
     padding: .5rem;
     margin: .5rem;
     display: flex;
@@ -27,83 +28,267 @@ nav{
 
 }
 
-.branding{
+.branding {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.logo img{
-    height:4rem;
+.logo img {
+    height: 4rem;
     margin: 0.8rem;
 }
 
-.brand_Text span{
-    color:#CC9600;
+.brand_Text span {
+    color: #CC9600;
 }
 
-.main_Menu ul{
+.main_Menu ul {
     display: flex;
-    list-style:none;
+    list-style: none;
 }
 
-.main_Menu ul li{
-    color:white;
+.main_Menu ul li {
+    color: white;
     letter-spacing: 2%;
     font-weight: 400;
     font-family: mono;
     margin: 0 .8rem;
+    cursor: pointer;
 }
 
-.notification_Bell img{
-    width:20px;
-    height:20px;
+.notification_Bell img {
+    width: 20px;
+    height: 20px;
 }
 
-.Profile_Icon img{
+.Profile_Icon img {
     width: 40px;
-    height:auto;
+    height: auto;
 }
 
-.Profile_Icon{
+.Profile_Icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: .8rem;
 }
 
-.Profile_Icon span{
+.Profile_Icon span {
     color: white;
-    text-align:center;
-    font-size:12px;
+    text-align: center;
+    font-size: 12px;
 }
 
 
 
-.bell_Profile{
+.bell_Profile {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 /* Main Cointainer CSS */
-.hero{
+.hero {
     background-image: url(./Assets/mainbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height40vh;
+    background-position: center;
+    height: 40rem;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    padding:20%;
 }
 
-.hero h2{
-    color:whitesmoke;
+.hero h2 {
+    background: linear-gradient(90deg, #FF7700 0%, #CC9600 50%, #FF7700 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Bona Nova;
+    color: transparent;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.hero p{
-    color: white;
-    font-size: 18px;
+.hero p {
+    font-family: Bona Nova;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+
+}
+
+.search_Box {
+    border: 1px solid #4B330B;
+    border-radius: .4rem;
+}
+
+.search_Box input {
+    padding: 8px 16px;
+    margin: .4rem;
+    border: none;
+    border-radius: .3rem;
+    background-color: transparent;
+    width: 16rem;
+    color: #A59F9F;
+}
+
+.search_Box input:focus {
+    outline: none;
+}
+
+.search_Box button {
+    padding: 8px 20px;
+    margin: .4rem;
+    color: #FFFFFF;
+    border: none;
+    border-radius: .3rem;
+    background-color: #4B330B;
+    outline: none;
+}
+
+.product_Preview {
+    margin: 3rem 1rem;
+    padding: 3rem 1rem;
+}
+
+.product_Preview h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-family: Bona Nova;
+    font-style: bold;
+    font-size: 48px;
+    letter-spacing: 2%;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 18rem;
+    width: fit-content;
+}
+
+.books img {
+    height: 18rem;
+    width: auto;
+}
+
+.books h3 {
+    padding: 1px;
+    margin: 5px;
+}
+
+.product_Indicetor {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.product_Indicetor div {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: .8rem;
+    width: .8rem;
+    margin: 8rem .7rem;
+}
+
+.product_Indicetor :nth-child(2) {
+    background-color: #64AEF4;
+}
+
+footer {
+    background: #000;
+    /* height: 60vh; */
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.footer_Content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_Content img {
+    height: 20rem;
+    width: auto;
+    margin: .5rem 2rem;
+    padding: .5rem;
+
+}
+
+.about_Image {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+    color: #FFFFFF;
+    padding: .7rem;
+    margin: .5rem 2rem;
+}
+
+.about_Image span {
+    color: #CC9600;
+}
+
+.about_Image p {
+    width: 66%;
+}
+
+.counterDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.counter {
+    color: #CA891D;
+    margin-right: 5rem;
+}
+
+.about_Image button {
+    padding: .8rem 2rem;
+    border: 1px solid #CC9600;
+    border-radius: 0.6rem;
+    margin: 2.5rem 0rem;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.footer_Logo img {
+    height: 5rem;
+    margin: 2rem 5rem;
+}
+
+.footer_Text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #FFFFFF;
+}
+
+.footer_Text span {
+    margin: 0rem 4rem;
+}
+
+.footer_Text span>a {
+    color: #FFFFFF;
+}
+
+.footer_Text p {
+    color: #CC9600;
 }
