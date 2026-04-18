@@ -1,0 +1,109 @@
+body{
+    padding:0;
+    margin:0;
+}
+.df{
+display: flex;
+}
+
+/* Header Cointainer CSS */
+
+header{
+    background-image: url(./Assets/navBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:5rem;
+    display:flex;
+    align-items: center;
+}
+
+nav{
+    padding: .5rem;
+    margin: .5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.branding{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    height:4rem;
+    margin: 0.8rem;
+}
+
+.brand_Text span{
+    color:#CC9600;
+}
+
+.main_Menu ul{
+    display: flex;
+    list-style:none;
+}
+
+.main_Menu ul li{
+    color:white;
+    letter-spacing: 2%;
+    font-weight: 400;
+    font-family: mono;
+    margin: 0 .8rem;
+}
+
+.notification_Bell img{
+    width:20px;
+    height:20px;
+}
+
+.Profile_Icon img{
+    width: 40px;
+    height:auto;
+}
+
+.Profile_Icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .8rem;
+}
+
+.Profile_Icon span{
+    color: white;
+    text-align:center;
+    font-size:12px;
+}
+
+
+
+.bell_Profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Main Cointainer CSS */
+.hero{
+    background-image: url(./Assets/mainbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height40vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding:20%;
+}
+
+.hero h2{
+    color:whitesmoke;
+}
+
+.hero p{
+    color: white;
+    font-size: 18px;
+}
