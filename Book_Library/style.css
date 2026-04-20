@@ -57,6 +57,12 @@ nav {
     cursor: pointer;
 }
 
+.main_Menu ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
 .notification_Bell img {
     width: 20px;
     height: 20px;
@@ -291,4 +297,301 @@ footer {
 
 .footer_Text p {
     color: #CC9600;
+}
+
+/* 
+----------------------------------------------------------
+About Section CSS Only ---------------------------------------------------------- */
+.about_Main_Content {
+    background: #000;
+    color: white;
+}
+
+.hero_About img {
+    max-width: 100%;
+}
+
+.first_Pera {
+    padding: 2rem 4rem;
+}
+
+.first_Pera h2 {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 26px;
+    letter-spacing: 2%;
+    color: #CC9600;
+}
+
+
+.second_Pera,
+.third_Pera {
+    padding: 2rem 4rem;
+}
+
+h3 {
+    font-family: Bona Nova;
+    color: #CC9600;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2%;
+}
+
+.pA {
+    font-family: Bona Nova;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 2rem;
+    line-height: 26px;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.pA span {
+    color: #FCEE59;
+}
+
+.content {
+    display: flex;
+}
+
+/* ----------------------------------------------------------------------------
+Shop Section CSS Only ---------------------------------------------------------------------------- */
+
+.shop_Main_Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.shop_Main_Content h1 {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    color: #CC9600;
+    line-height: 100%;
+    letter-spacing: 2%;
+
+}
+
+.shop_Main_Content input {
+    margin-left: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Book_Card {
+    border: 1px solid darkgray;
+    border-radius: .3rem;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.Book_Card img {
+    height: auto;
+    width: 14rem;
+}
+
+.Book_Card h4 {
+    margin-bottom: 0;
+}
+
+.Book_Card p {
+    margin-top: 0;
+}
+
+.Book_Card button {
+    width: 60%;
+    align-self: center;
+    border: 1px solid #CC9600;
+    border-radius: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    background: transparent;
+    transition: .3s ease-in-out;
+}
+
+.Book_Card button:hover {
+    background-color: #f4c030;
+    transform: scale(1.2);
+}
+
+.Book_Card button img {
+    height: 20px;
+    width: 20px;
+    margin: .2rem;
+}
+
+.cart_Buket {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.cart_Buket button {
+    border: none;
+    background-color: transparent;
+    margin: .4rem 2rem;
+    transition: .3s ease-in-out;
+}
+
+.cart_Buket button:hover {
+    transform: scale(1.2);
+}
+
+.cart_Buket button img {
+    height: 4rem;
+    width: 4rem;
+
+}
+
+/* 
+------------------------------------------------------------------------------------------
+Login Section CSS Only ------------------------------------------------------------------------------------------ */
+
+
+.login_Main {
+    display: flex;
+    height: 99vh;
+
+}
+
+.login_Main>.photo img {
+    height: 99vh;
+    width: auto;
+}
+
+.Login_Form_Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_Main h2 {
+    font-family: Bona Nova;
+    text-align: center;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #CC9600;
+}
+
+.login_Main p {
+    font-family: Bona Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15px;
+    color: #FFFFFF;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.Login_Form_Section form input {
+    width: 27rem;
+    height: 2.5rem;
+    padding: .7rem;
+    margin: .5rem;
+    opacity: 0.9;
+    border-radius: 10px;
+    background-color: #D6CE80;
+    color: #434244;
+    font-family: Bona Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2%;
+}
+
+.login_Main form h2 {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 29px;
+    color: #CA891D;
+    line-height: 100%;
+    letter-spacing: 2%;
+
+}
+
+.new_Regstration {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+}
+
+.new_Regstration p {
+    font-family: Bona Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 2%;
+}
+
+.new_Regstration a {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-decoration-style: solid;
+    color: #F29C0D;
+}
+
+.Login_Method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.Login_Method img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.Login_Method a {
+    font-family: Bona Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Login_Method button {
+    width: 154px;
+    height: 46px;
+    opacity: 1;
+    border-radius: 15px;
+    background-color: #CC9600;
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 2%;
 }
