@@ -80,6 +80,13 @@ nav {
     margin: .8rem;
 }
 
+
+.Profile_Icon a {
+    color: white;
+    text-decoration: none;
+    cursor: grab;
+}
+
 .Profile_Icon span {
     color: white;
     text-align: center;
@@ -775,4 +782,141 @@ Notification Section CSS Only --------------------------------------------------
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0%;
+}
+
+/* 
+------------------------------------------------------------------
+Cart Section CSS Only ------------------------------------------------------------------ */
+
+.Cart_Main {
+    display: flex;
+
+}
+
+.cart_Banner {
+    height: 100vh;
+    align-items: center;
+}
+
+
+.cart_Banner img {
+    margin-top: 4rem;
+    height: 80vh;
+    width: auto;
+}
+
+.Cart_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: stretch;
+}
+
+.Cart_Container h2:nth-last-of-type(3) {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    color: #4B330B;
+    line-height: 32px;
+    letter-spacing: 2%;
+
+}
+
+.Cart_Container h2:nth-last-of-type(2) {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    color: #000000;
+    line-height: 21px;
+    letter-spacing: 2%;
+}
+
+.Cart_Container button {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    margin: 1rem;
+    font-family: Bona Nova;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 29px;
+    color: #000000;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: transparent;
+
+}
+
+.cart_List {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 3rem;
+    margin: .4rem 3rem;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+}
+
+.cart_List img {
+    width: 5rem;
+    height: auto;
+    align-self: center;
+}
+
+.cart_List h2:nth-last-of-type(2) {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    color: #000000;
+    line-height: 21px;
+    letter-spacing: 2%;
+}
+
+.cart_List h2:nth-last-of-type(1) {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    color: #000000;
+    line-height: 21px;
+    letter-spacing: 2%;
+}
+
+.cart_List span:nth-last-of-type(2) {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 21px;
+    letter-spacing: 2%;
+}
+
+.cart_List span:nth-last-of-type(1) {
+    font-family: Bona Nova;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4B330B;
+    line-height: 21px;
+    letter-spacing: 2%;
+    align-self: center;
+}
+
+.cart_List span:nth-last-of-type(1) input {
+    width: 2rem;
+    padding: .2rem;
+    margin: 0rem .3rem;
+    border-radius: .4rem;
+    border: 1px solid black;
+}
+
+.cart_List span:nth-last-of-type(1) input[type=number]::-webkit-inner-spin-button,
+.cart_List span:nth-last-of-type(1) input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
 }
