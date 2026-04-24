@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
-    <title>City Virtual Librbry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <title>City Virtual Librbry</title>
 </head>
 
 <body>
@@ -52,11 +55,13 @@
                 <span>Copies <input type="number" value="1" name="" id=""></span>
             </div>
             <h2>Total Price: Rs. <span>700.00</span></h2>
-            <button>Proceed to Checkout</button>
+            <button id="ChackOutBtn">Proceed to Checkout</button>
         </div>
     </main>
 
     <footer>
+
+
         <div class="footer_Logo">
             <img src="./Assets/CVL_Logo.png" alt="">
         </div>
@@ -67,6 +72,52 @@
                 enjoy maximum benefits!</p>
         </div>
     </footer>
+
+    <!-- Chackout Details -->
+
+    <div class="bgDiv">
+        <div class="checkout_Form">
+            <form action="">
+                <h2>Checkout Details</h2>
+                <div class="input_Box"><i class="fa-regular fa-user"></i><input type="text" placeholder="Receiver name">
+                </div>
+                <div class="input_Box"><i class="fa-solid fa-wallet"></i><input type="text"
+                        placeholder="Billing Address">
+                </div>
+                <div class="input_Box"><i class="fa-regular fa-house"></i><input type="text"
+                        placeholder="Sending Address">
+                </div>
+                <div class="input_Box"><i class="fa-solid fa-location-dot"></i><input type="text"
+                        placeholder="Select Province"></div>
+                <div class="input_Box"><i class="fa-solid fa-phone"></i><input type="text" placeholder="Contact Number">
+                </div>
+                <div class="input_Box"><i class="fa-regular fa-credit-card"></i><input type="text"
+                        placeholder="Card Number"></div>
+                <button>Pay Now</button>
+                <button id="close_Btn">Close Checkout Page</button>
+                <span>*Contact us to cancel your order</span>
+            </form>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        let chackoutBtn = document.getElementById("ChackOutBtn");
+        chackoutBtn.addEventListener("click", () => {
+            document.getElementsByClassName("bgDiv")[0].style.display = "flex";
+        });
+
+        let close_BTN = document.getElementById("close_Btn");
+        close_BTN.addEventListener("click", () => {
+            document.getElementsByClassName("bgDiv")[0].style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
