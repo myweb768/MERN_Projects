@@ -13,10 +13,9 @@
 </head>
 
 <body class="bg-linear-to-r from-cyan-400 to-blue-400">
-    <header class="bg-linear-to-r from-[rgb(139,92,246)] to-[rgb(0,0,0)]">
-        <nav
-            class="flex items-center justify-between bg-black h-16 p-4 bg-gradient-r from-[rgb(139, 92, 246)] to-[rgb(0,0,0)]">
-            <div class="logo text-white text-3xl font-[Rubik_Storm]">Refan</div>
+    <header class="">
+        <nav class="flex items-center justify-between bg-linear-to-bl from-violet-500 to-fuchsia-900 h-16 p-4 ">
+            <div class="logo text-white text-3xl font-[Rubik_Storm]">Developer Refan</div>
             <div
                 class="menu bg-white/20 rounded-2xl border border-white/20 p-4 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]">
                 <ul class="flex gap-2 items-center justify-center text-white">
@@ -40,7 +39,7 @@
     <main>
         <div class="about_Me flex items-center justify-around gap-2 w-[70vw] p-4 m-auto bg-gray/70">
             <div class="text">
-                <h1>Hi, I’m <strong>Omar Faruque Refan,</strong></h1>
+                <h1 class="text-2xl font-600">Hi, I’m <strong>Omar Faruque Refan,</strong></h1>
                 <p>an open-source full-stack web developer specializing in React, NextJS, MongoDB,ExpressJS, and
                     JavaScript ES6 (MERN).</p> <br>
 
@@ -178,25 +177,66 @@
             </div>
 
             <button
-                class="self-end bg-amber-900 border border-amber-900 rounded-2xl p-3 text-white font-semibold hover:scale-105 hover:bg-amber-800 transition-all decoration-amber-300 ease-in-out">View
+                class="self-end bg-amber-600 border border-amber-600 rounded-2xl p-3 text-white font-semibold hover:scale-105 hover:bg-amber-600 transition-all decoration-amber-300 ease-in-out">View
                 more Projects</button>
         </div>
-        <div class="Testimonials flex">
-            <div class="testimonials_Card text-justify p-3 m-auto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias eligendi quo cum repudiandae
-                    nobis nesciunt sunt! Temporibus officiis dolorem, aliquid aliquam corporis labore, nulla, error
-                    cumque dicta voluptates pariatur.</p>
-                <div>
-                    <img src="" alt="">
-                    <h2></h2>
-                    <h3></h3>
-                    <span></span>
+        <section>
+            <h2 class="text-center text-3xl text-gray-700 m-3">Testimonials</h2>
+
+            <div class="Testimonials flex w-[80%] m-auto  gap-3">
+                <div
+                    class="testimonials_Card text-justify m-auto w-120 p-4  bg-white/20 border border-white/25 rounded-[.4rem]  ">
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias eligendi
+                        quo
+                        cum repudiandae
+                        nobis nesciunt sunt! Temporibus officiis dolorem, aliquid aliquam corporis labore, nulla, error
+                        cumque dicta voluptates pariatur.</p>
+                    <div class="border border-t border-gray-400 m-2">
+                        <img src="./Assets/User!.jpg" alt="" class="h-20 w-20  float-left rounded-[50%] m-3 tasti_Img">
+                        <div class="info_Test float-right m-3">
+                            <h2 class="font-semibold text-2xl">Md. Abdullah</h2>
+                            <h3 class="font-semibold text-xl">SEO Incharge </h3>
+                            <span class="font-medium text-gray-700">The IT Solution BD</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="testimonials_Card text-justify m-auto w-120 p-4  bg-white/20 border border-white/25 rounded-[.4rem]  ">
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias eligendi
+                        quo
+                        cum repudiandae
+                        nobis nesciunt sunt! Temporibus officiis dolorem, aliquid aliquam corporis labore, nulla, error
+                        cumque dicta voluptates pariatur.</p>
+                    <div class="border border-t border-gray-400 m-2">
+                        <img src="./Assets/User2.jpg" alt="" class="h-20 w-20  float-left rounded-[50%] m-3 tasti_Img">
+                        <div class="info_Test float-right m-3">
+                            <h2 class="font-semibold text-2xl">Md. Ahsanul</h2>
+                            <h3 class="font-semibold">Marketing Menager</h3>
+                            <span class="font-medium text-gray-700">The IT Solution BD</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="testimonials_Card text-justify m-auto w-120 p-4  bg-white/20 border border-white/25 rounded-[.4rem]  ">
+                    <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias eligendi
+                        quo
+                        cum repudiandae
+                        nobis nesciunt sunt! Temporibus officiis dolorem, aliquid aliquam corporis labore, nulla, error
+                        cumque dicta voluptates pariatur.</p>
+                    <div class="border border-t border-gray-400 m-2">
+                        <img src="./Assets/User3.jpg" alt="" class="h-20 w-20  float-left rounded-[50%] m-3 tasti_Img">
+                        <div class="info_Test float-right m-3">
+                            <h2 class="font-semibold text-2xl"> Tarek Ahmad</h2>
+                            <h3 class="font-semibold ">Distribution Officer </h3>
+                            <span class="font-medium text-gray-700">The IT Solution BD</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <footer>
-        <span>Copywrite@figma design</span>
+    <footer class="h-24 bg-linear-to-bl from-violet-500 to-fuchsia-900 flex items-center justify-center mt-8">
+        <span class="text-xl font-500 text-white ">Copywrite@figma design</span>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
