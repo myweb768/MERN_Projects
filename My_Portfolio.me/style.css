@@ -1,0 +1,28 @@
+.projects_Card:hover .dynamic {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.project_Btn {
+    background-color: #92400e;
+    border-radius: .5rem;
+    padding: 0.75rem;
+    margin: .5rem;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+}
+
+.project_Btn:hover {
+    transform: scale(1.05);
+    background-color: aqua;
+}
+
+
+
+.dynamic {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dynamic:hover {}
