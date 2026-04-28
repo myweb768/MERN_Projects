@@ -14,11 +14,12 @@
 
 <body class="bg-linear-to-r from-cyan-400 to-blue-400">
     <header class="">
-        <nav class="flex items-center justify-between bg-linear-to-bl from-violet-500 to-fuchsia-900 h-16 p-4 ">
+        <nav
+            class="flex items-center justify-between bg-linear-to-bl from-violet-500 to-fuchsia-900 h-16 p-4  relative">
             <div class="logo text-white text-3xl font-[Rubik_Storm]">Developer Refan</div>
             <div
-                class="menu bg-white/20 rounded-2xl border border-white/20 p-4 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]">
-                <ul class="flex gap-2 items-center justify-center text-white">
+                class="menu bg-white md:bg-white/20 md:rounded-2xl border border-white/20 p-4 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]  absolute md:static -bottom-15  left-0 w-full md:w-fit">
+                <ul class="flex  items-center justify-center text-black md:text-white md:p-[0rem .5rem]">
                     <li class="cursor-pointer">Home</li>
                     <li class="cursor-pointer">About</li>
                     <li class="cursor-pointer">Portfolio</li>
@@ -37,7 +38,8 @@
         </nav>
     </header>
     <main>
-        <div class="about_Me flex items-center justify-around gap-2 w-[70vw] p-4 m-auto bg-gray/70">
+        <div
+            class="about_Me flex items-center justify-around gap-2 w-[70vw] p-4 m-auto bg-gray/70 flex-col-reverse md:flex-row">
             <div class="text">
                 <h1 class="text-2xl font-600">Hi, I’m <strong>Omar Faruque Refan,</strong></h1>
                 <p>an open-source full-stack web developer specializing in React, NextJS, MongoDB,ExpressJS, and
@@ -56,11 +58,11 @@
 
         <div class="my_Project w-[90vw] p-1 m-auto">
             <h1 class="text-center text-3xl ">My Projects</h1>
-            <div class="Cards  p-3 m-auto grid grid-cols-5 gap-2 ">
+            <div class="Cards  p-3 m-auto grid grid-cols-1  gap-2  md:grid-cols-5">
 
                 <div
                     class="projects_Card  border border-black rounded-[.4rem]  items-center justify-center p-3  relative">
-                    <img src="./Assets/Site_Preview.png" alt="" class="w-[15rem] m-auto">
+                    <img src="./Assets/Site_Preview.png" alt="" class="w-60 m-auto">
                     <div
                         class="dynamic absolute  top-0 left-0 w-full bg-white/85 transition-all duration-300 ease-in-out p-4 h-full items-center justify-center flex flex-col rounded-[.4rem]">
                         <h1 class="text-center text-2xl ">City Virtual Library</h1>
@@ -83,7 +85,7 @@
                 </div>
                 <div
                     class="projects_Card  border border-black rounded-[.4rem]  items-center justify-center p-3  relative">
-                    <img src="./Assets/Site_Preview.png" alt="" class="w-[15rem] m-auto">
+                    <img src="./Assets/Site_Preview.png" alt="" class="w-60 m-auto">
                     <div
                         class="dynamic absolute  top-0 left-0 w-full bg-white/85 transition-all duration-300 ease-in-out p-4 h-full items-center justify-center flex flex-col rounded-[.4rem]">
                         <h1 class="text-center text-2xl ">City Virtual Library</h1>
@@ -106,7 +108,7 @@
                 </div>
                 <div
                     class="projects_Card  border border-black rounded-[.4rem]  items-center justify-center p-3  relative">
-                    <img src="./Assets/Site_Preview.png" alt="" class="w-[15rem] m-auto">
+                    <img src="./Assets/Site_Preview.png" alt="" class="w-60 m-auto">
                     <div
                         class="dynamic absolute  top-0 left-0 w-full bg-white/85 transition-all duration-300 ease-in-out p-4 h-full items-center justify-center flex flex-col rounded-[.4rem]">
                         <h1 class="text-center text-2xl ">City Virtual Library</h1>
@@ -129,7 +131,7 @@
                 </div>
                 <div
                     class="projects_Card  border border-black rounded-[.4rem]  items-center justify-center p-3  relative">
-                    <img src="./Assets/Site_Preview.png" alt="" class="w-[15rem] m-auto">
+                    <img src="./Assets/Site_Preview.png" alt="" class="w-60 m-auto">
                     <div
                         class="dynamic absolute  top-0 left-0 w-full bg-white/85 transition-all duration-300 ease-in-out p-4 h-full items-center justify-center flex flex-col rounded-[.4rem]">
                         <h1 class="text-center text-2xl ">City Virtual Library</h1>
@@ -152,7 +154,7 @@
                 </div>
                 <div
                     class="projects_Card  border border-black rounded-[.4rem]  items-center justify-center p-3  relative">
-                    <img src="./Assets/Site_Preview.png" alt="" class="w-[15rem] m-auto">
+                    <img src="./Assets/Site_Preview.png" alt="" class="w-60 m-auto">
                     <div
                         class="dynamic absolute  top-0 left-0 w-full bg-white/85 transition-all duration-300 ease-in-out p-4 h-full items-center justify-center flex flex-col rounded-[.4rem]">
                         <h1 class="text-center text-2xl ">City Virtual Library</h1>
@@ -183,7 +185,7 @@
         <section>
             <h2 class="text-center text-3xl text-gray-700 m-3">Testimonials</h2>
 
-            <div class="Testimonials flex w-[80%] m-auto  gap-3">
+            <div class="Testimonials flex flex-wrap md:flex-nowrap w-[80%] m-auto  gap-3">
                 <div
                     class="testimonials_Card text-justify m-auto w-120 p-4  bg-white/20 border border-white/25 rounded-[.4rem]  ">
                     <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias eligendi
