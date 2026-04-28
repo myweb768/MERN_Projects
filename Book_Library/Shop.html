@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
     <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>About | City Virtual Librbry</title>
 </head>
 
@@ -16,13 +20,23 @@
                 <div class="logo"><img src="./Assets/open-book.png" alt=""></div>
                 <div class="brand_Text"> <span>CITY VIRTUAL <br> LIBRARY </span></div>
             </div>
-            <div class="main_Menu">
+            <div class="main_Menu" id="mainMenu">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./Shop.html">Shop</a></li>
-                    <li>Delevery Time</li>
-                    <li><a href="Seller">Seller</a></li>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./Shop.html">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>Delevery Time</li>
+                    </a>
+                    <a href="Seller">
+                        <li>Seller</li>
+                    </a>
                 </ul>
             </div>
             <div class="bell_Profile">
@@ -31,15 +45,14 @@
                         <img src="./Assets/notification.png" alt="Notification Bell">
                     </div>
                 </a>
-
                 <div class="Profile_Icon">
                     <img src="./Assets/profile.png" alt="Profile Picture">
                     <span><a href="./cart.html">user1@Citylibraby.org</a></span>
                 </div>
             </div>
+            <button id="navBtn"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
-
     <main class="shop_Main_Content">
 
         <h1>Explore All Books Here</h1>
@@ -136,12 +149,17 @@
         </div>
         <div style="width: 80%;  border: 1px solid aliceblue; padding: 0; margin: auto;"></div>
         <div class="footer_Text">
-            <span>© 2024 |<a href="#"> City Virtual Library</a></span>
+            <span>@
+                <script>document.write(new Date().getFullYear())</script>|<a href="#"> City Virtual Library</a>
+            </span>
             <p>Visit our branches in Galle, Kurunegala, Kandy, and Colombo, and register for our online platform to
                 enjoy maximum benefits!</p>
         </div>
     </footer>
-
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

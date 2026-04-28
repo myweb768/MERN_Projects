@@ -19,13 +19,23 @@
                 <div class="logo"><img src="./Assets/open-book.png" alt=""></div>
                 <div class="brand_Text"> <span>CITY VIRTUAL <br> LIBRARY </span></div>
             </div>
-            <div class="main_Menu">
+            <div class="main_Menu" id="mainMenu">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./Shop.html">Shop</a></li>
-                    <li>Delevery Time</li>
-                    <li><a href="Seller">Seller</a></li>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./Shop.html">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>Delevery Time</li>
+                    </a>
+                    <a href="Seller">
+                        <li>Seller</li>
+                    </a>
                 </ul>
             </div>
             <div class="bell_Profile">
@@ -39,6 +49,7 @@
                     <span><a href="./cart.html">user1@Citylibraby.org</a></span>
                 </div>
             </div>
+            <button id="navBtn"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
     <main class="Cart_Main">
@@ -60,53 +71,49 @@
     </main>
 
     <footer>
-
-
+        <!-- Chackout Details -->
+        <div class="bgDiv">
+            <div class="checkout_Form">
+                <form action="">
+                    <h2>Checkout Details</h2>
+                    <div class="input_Box"><i class="fa-regular fa-user"></i><input type="text"
+                            placeholder="Receiver name">
+                    </div>
+                    <div class="input_Box"><i class="fa-solid fa-wallet"></i><input type="text"
+                            placeholder="Billing Address">
+                    </div>
+                    <div class="input_Box"><i class="fa-regular fa-house"></i><input type="text"
+                            placeholder="Sending Address">
+                    </div>
+                    <div class="input_Box"><i class="fa-solid fa-location-dot"></i><input type="text"
+                            placeholder="Select Province"></div>
+                    <div class="input_Box"><i class="fa-solid fa-phone"></i><input type="text"
+                            placeholder="Contact Number">
+                    </div>
+                    <div class="input_Box"><i class="fa-regular fa-credit-card"></i><input type="text"
+                            placeholder="Card Number"></div>
+                    <button>Pay Now</button>
+                    <button id="close_Btn">Close Checkout Page</button>
+                    <span>*Contact us to cancel your order</span>
+                </form>
+            </div>
+        </div>
         <div class="footer_Logo">
             <img src="./Assets/CVL_Logo.png" alt="">
         </div>
         <div style="width: 80%;  border: 1px solid aliceblue; padding: 0; margin: auto;"></div>
         <div class="footer_Text">
-            <span>© 2024 |<a href="#"> City Virtual Library</a></span>
+            <span>@
+                <script>document.write(new Date().getFullYear())</script>|<a href="#"> City Virtual Library</a>
+            </span>
             <p>Visit our branches in Galle, Kurunegala, Kandy, and Colombo, and register for our online platform to
                 enjoy maximum benefits!</p>
         </div>
     </footer>
-
-    <!-- Chackout Details -->
-
-    <div class="bgDiv">
-        <div class="checkout_Form">
-            <form action="">
-                <h2>Checkout Details</h2>
-                <div class="input_Box"><i class="fa-regular fa-user"></i><input type="text" placeholder="Receiver name">
-                </div>
-                <div class="input_Box"><i class="fa-solid fa-wallet"></i><input type="text"
-                        placeholder="Billing Address">
-                </div>
-                <div class="input_Box"><i class="fa-regular fa-house"></i><input type="text"
-                        placeholder="Sending Address">
-                </div>
-                <div class="input_Box"><i class="fa-solid fa-location-dot"></i><input type="text"
-                        placeholder="Select Province"></div>
-                <div class="input_Box"><i class="fa-solid fa-phone"></i><input type="text" placeholder="Contact Number">
-                </div>
-                <div class="input_Box"><i class="fa-regular fa-credit-card"></i><input type="text"
-                        placeholder="Card Number"></div>
-                <button>Pay Now</button>
-                <button id="close_Btn">Close Checkout Page</button>
-                <span>*Contact us to cancel your order</span>
-            </form>
-        </div>
-
-    </div>
-
-
-
+    <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
         integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script>
         let chackoutBtn = document.getElementById("ChackOutBtn");
         chackoutBtn.addEventListener("click", () => {

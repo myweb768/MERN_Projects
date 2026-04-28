@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .df {
@@ -81,6 +82,7 @@ nav button:hover {
         border-bottom: 1px solid white;
         width: 100%;
         transition: all .3s ease-in-out;
+        text-shadow: 2px 0px 5px black;
     }
 
     .main_Menu ul a li:hover {
@@ -91,6 +93,7 @@ nav button:hover {
 
     nav button {
         display: block;
+        z-index: 2222;
     }
 }
 
@@ -341,6 +344,12 @@ footer {
     margin: 2.5rem 0rem;
     background: transparent;
     color: #FFFFFF;
+    transition: all .3s ease-in-out;
+}
+
+.about_Image button:hover {
+    background-color: #CC9600;
+    transform: scale(1.1);
 }
 
 .footer_Logo img {
@@ -353,6 +362,21 @@ footer {
     align-items: center;
     justify-content: flex-start;
     color: #FFFFFF;
+}
+
+@media screen and (max-width:830px) {
+    .footer_Text {
+        display: block;
+        text-align: center;
+    }
+
+    .footer_Content {
+        display: block;
+    }
+
+    .footer_Content img {
+        width: 100%;
+    }
 }
 
 .footer_Text span {
@@ -416,7 +440,7 @@ h3 {
     margin: 2rem;
     line-height: 26px;
     letter-spacing: 2%;
-    text-align: center;
+    text-align: justify;
 }
 
 .pA span {
@@ -426,6 +450,13 @@ h3 {
 .content {
     display: flex;
 }
+
+@media screen and (max-width:840px) {
+    .content {
+        display: block;
+    }
+}
+
 
 /* ----------------------------------------------------------------------------
 Shop Section CSS Only ---------------------------------------------------------------------------- */
@@ -468,6 +499,18 @@ Shop Section CSS Only ----------------------------------------------------------
     justify-content: start;
 }
 
+@media screen and (max-width:840px) {
+    .Book_Card {
+        width: 100%;
+        align-items: center;
+    }
+
+    .Book_Card button {
+        width: 100%;
+
+    }
+}
+
 .Book_Card img {
     height: auto;
     width: 14rem;
@@ -486,7 +529,7 @@ Shop Section CSS Only ----------------------------------------------------------
 }
 
 .Book_Card button {
-    width: 60%;
+    padding: .3rem 2rem;
     align-self: center;
     border: 1px solid #CC9600;
     border-radius: .6rem;
@@ -707,7 +750,7 @@ Notification Section CSS Only --------------------------------------------------
     margin: 1rem;
 }
 
-/* ------------------------------------------------------Preview Section CSS Only ------------------------------------------------------ */
+/* ------------------------------------------------------ Preview Section CSS Only ------------------------------------------------------ */
 
 .preview_Main {
     display: flex;
@@ -866,6 +909,14 @@ Cart Section CSS Only ----------------------------------------------------------
     width: auto;
 }
 
+@media screen and (max-width:830px) {
+    .cart_Banner img {
+        display: none;
+    }
+
+
+}
+
 .Cart_Container {
     display: flex;
     flex-direction: column;
@@ -922,7 +973,7 @@ Cart Section CSS Only ----------------------------------------------------------
     border: 1px solid black;
     border-radius: .5rem;
     padding: 3rem;
-    margin: .4rem 3rem;
+    margin: .4rem auto;
     width: max-content;
     display: flex;
     flex-direction: column;
@@ -1018,6 +1069,22 @@ Chackout_Form CSS Only --------------------------------------------- */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 1rem;
+}
+
+@media screen and (max-width:830px) {
+    .bgDiv {
+        position: absolute;
+    }
+
+    .checkout_Form form {
+        height: auto;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .checkout_Form form h2 {

@@ -19,7 +19,7 @@
                 <div class="logo"><img src="./Assets/open-book.png" alt=""></div>
                 <div class="brand_Text"> <span>CITY VIRTUAL <br> LIBRARY </span></div>
             </div>
-            <div class="main_Menu">
+            <div class="main_Menu" id="mainMenu">
                 <ul>
                     <a href="./index.html">
                         <li>Home</li>
@@ -49,7 +49,7 @@
                     <span><a href="./cart.html">user1@Citylibraby.org</a></span>
                 </div>
             </div>
-            <button><i class="fa-solid fa-bars"></i></button>
+            <button id="navBtn"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
     <main>
@@ -129,12 +129,14 @@
         </div>
         <div style="width: 80%;  border: 1px solid aliceblue; padding: 0; margin: auto;"></div>
         <div class="footer_Text">
-            <span>© 2024 |<a href="#"> City Virtual Library</a></span>
+            <span>@
+                <script>document.write(new Date().getFullYear())</script>|<a href="#"> City Virtual Library</a>
+            </span>
             <p>Visit our branches in Galle, Kurunegala, Kandy, and Colombo, and register for our online platform to
                 enjoy maximum benefits!</p>
         </div>
     </footer>
-
+    <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
         integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
