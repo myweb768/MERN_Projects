@@ -5,33 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Today's Techonology</title>
+    <link rel="stylesheet" href="./Assets/fontawesome-free-7.2.0-web/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="branding">
-            <img src="" alt="">
-        </div>
-        <menu>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Updates</a></li>
-                <li><a href="">National</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </menu>
-        <div class="account">
-            <img src="" alt="">
-            <span></span>
-        </div>
-    </header>
-    <main>
-        <div class="sidemenu"></div>
-        <div class="blog"></div>
-        <div class="submenu"></div>
+    <!-- Header Section Code  -->
+    <section class="header_Section  items-center  py-3 shadow-2xl ">
+        <header class="max-w-300 grid grid-cols-3 mx-auto justify-between items-center">
+            <div class="branding flex items-center">
+                <img src="" alt="">
+                <span>Demo</span>
+            </div>
+            <menu class="">
+                <ul class="px-4 flex gap-2 items-center justify-center list-none">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Updates</a></li>
+                    <li><a href="">National</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </menu>
+            <div class="account flex items-center">
+                <img src="" alt="">
+                <span>myAccount</span>
+            </div>
+        </header>
+    </section>
+
+    <!-- Main Content code  -->
+    <main class="md:grid md:grid-cols-3">
+        <!-- Side Menu Section Code -->
+        <section class="SideMenu">
+            <div class="sidemenu border border-r-2 border-black p-2 fixed left-0 ">
+                <ul class="list-none flex flex-col gap-2">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Favorite</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Stock Market</a></li>
+                    <li><a href="">Current Affair</a></li>
+                    <li><a href="">Games</a></li>
+                    <li><a href="">Technology</a></li>
+                    <li><a href="">Robotic</a></li>
+                    <li><a href="">Government</a></li>
+                    <li><a href="">Blocked</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Blog Section Code  -->
+        <section class="blog">
+            <div class="blog">
+                <div class="Home  max-w-300 p-2 m-auto">
+                    <h2 class="text-center text-gray-700 font-semibold text-2xl border-b-gray-500 w-full">Hot Updates
+                    </h2>
+                    <div class="cointainer md:grid md:grid-cols-3 gap-4 m-4">
+                        <div class="cointainer_Div">1</div>
+                        <div class="cointainer_Div">2</div>
+                        <div class="cointainer_Div">3</div>
+                        <div class="cointainer_Div">4</div>
+                        <div class="cointainer_Div">5</div>
+                        <div class="cointainer_Div">6</div>
+                    </div>
+                    <button class="flex gap-1 p-2 rounded-xl bg-green-500 items-center justify-center"><a href="">See
+                            More <i class="fa-solid fa-angles-right"></i></a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submenu Section Code  -->
+        <section class="submenu">
+            <div class="submenu"></div>
+        </section>
+
     </main>
-    <footer></footer>
+
+    <!-- Footer Section Code  -->
+    <footer>
+        <div class="sources"></div>
+        <div class="contect_Form"></div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./Assets/fontawesome-free-7.2.0-web/all.min.js"></script>
 </body>
 
 </html>
+
+
+
+<!-- npx tailwindcss -i ./src/input.css -o ./output.css --watch -->
