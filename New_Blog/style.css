@@ -8,3 +8,17 @@
     align-items: center;
     justify-content: center;
 }
+
+.sidemenu ul li {
+    padding: .5rem;
+    margin: .3rem;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.sidemenu ul li:hover {
+    background-color: lightblue;
+    border-radius: .3rem 0 0 .3rem;
+    color: rgb(71, 71, 71);
+    transform: scale(1.1);
+}
