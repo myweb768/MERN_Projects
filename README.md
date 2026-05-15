@@ -16,6 +16,7 @@ I have utilized a diverse tech stack to build these applications, ensuring a str
 | :--- | :--- | :--- |
 | 1 | Using HTML, CSS, JS beginner project and Basic Site | [Book_Library](https://myweb768.github.io/MERN_Projects/Book_Library/index.html) |
 | 2 | Using HTML, CSS, JS, Tailwind CSS beginner project and Basic Site | [My_Portfolio](https://myweb768.github.io/MERN_Projects/My_Portfolio.me/index.html) |
+| 3 | Using HTML, CSS, JS, Tailwind CSS, FontAwesome, Node JS.  Beginner project and Basic Site | [New_Blog](https://myweb768.github.io/MERN_Projects/New_Blog/index.html) |
 
 ---
 ### How to use this repository
