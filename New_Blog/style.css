@@ -1,5 +1,17 @@
+* {
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --header-height: 0px;
+}
+
 .Home .cointainer div {
-    background: rgb(235, 234, 234);
+    background: #ebeaea;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
     border-radius: .3rem;
     height: 100%;
@@ -7,6 +19,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+menu ul li {
+    padding: 0rem 1rem;
+    font-weight: 600;
+    color: rgb(1, 18, 29);
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
+
+}
+
+menu ul li:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid gray;
+
 }
 
 .sidemenu ul li {
@@ -21,4 +48,25 @@
     border-radius: .3rem 0 0 .3rem;
     color: rgb(71, 71, 71);
     transform: scale(1.1);
+}
+
+
+.submenu ul li a {
+    display: block;
+    text-wrap: wrap;
+    padding: .3rem;
+    color: rgb(51, 51, 51);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.submenu ul li a:hover {
+    color: mediumslateblue;
+    transform: scale(1.1);
+}
+
+.sidemenu,
+.submenu {
+    height: calc(100vh - var(--header-height));
 }

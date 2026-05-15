@@ -12,10 +12,11 @@
 
 <body>
     <!-- Layout Structur code  -->
-    <section class="header_Section  py-3 shadow-2xl  sticky">
+    <section class="header_Section  py-3 shadow-2xl  sticky top-0 bg-white">
 
         <!-- Header Section Code  -->
         <header class=" flex  mx-auto justify-between items-center  max-w-300">
+            <button class="sidbar_Open p-4 m-2 bg-white  md:hidden"><i class="fa-solid fa-circle-right"></i></button>
             <div class="branding flex items-center">
                 <img src="" alt="">
                 <span>Demo</span>
@@ -23,8 +24,8 @@
             <menu class="">
                 <ul class="px-4 flex gap-2 items-center justify-center list-none">
                     <li><a href="">Home</a></li>
-                    <li><a href="">Updates</a></li>
-                    <li><a href="">National</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Carrier</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -39,8 +40,9 @@
     <!-- Main Content code  -->
     <main class="md:grid md:grid-cols-[1fr_4fr_1fr]">
         <!-- Side Menu Section Code -->
-        <section class="SideMenu">
-            <div class="sidemenu h-full p-4 m-2 border-r-2 border-black fixed left-0 ">
+        <section class="SideMenu w-0 md:w-auto transform(-100) md:transform(0)">
+            <div class="sidemenu  p-4 m-2 border-r-2 border-black sticky top-0 left-0 overflow-scroll z-20"
+                style="top: var(--header-height)">
                 <ul class="list-none flex flex-col gap-2">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Favourite">Favourite</a></li>
@@ -50,8 +52,10 @@
                     <li><a href="#Games">Games</a></li>
                     <li><a href="#Technology">Technology</a></li>
                     <li><a href="#Robotic">Robotic</a></li>
+                    <li><a href="#Robotic">Agriculture</a></li>
+                    <li><a href="#Robotic">Medical</a></li>
                     <li><a href="#Government">Government</a></li>
-                    <li><a href="#Blocked">Blocked</a></li>
+                    <li><a href="#Education">Education</a></li>
                 </ul>
             </div>
         </section>
@@ -216,8 +220,8 @@
                     </h2>
                     <div class="cointainer md:grid md:grid-cols-3 gap-4 m-4">
                         <div class="cointainer_Div p-2 rounded-xl shadow-2xl flex flex-col items-center justify-center">
-                            <img src="./Assets/News.jpg" alt="" class="rounded-t-xl h-40 w-full">
-                            <h2 class="title text-xl text-gray-700 font-semibold">The Big News</h2>
+                            <img src="./Assets/Color_Vegi.jpg" alt="" class="rounded-t-xl h-40 w-full">
+                            <h2 class="title text-xl text-gray-700 font-semibold">Vegitable Market</h2>
                             <p class="p-1 m-1 text-justify ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Veritatis, natus quidem quasi
                                 quis iure error at, amet eius quam deleniti earum architecto debitis expedita, soluta
@@ -227,8 +231,8 @@
                                     class="fa-regular fa-folder-open"></i></button>
                         </div>
                         <div class="cointainer_Div p-2 rounded-xl shadow-2xl flex flex-col items-center justify-center">
-                            <img src="./Assets/news2.avif" alt="" class="rounded-t-xl h-40 w-full">
-                            <h2 class="title text-xl text-gray-700 font-semibold">The Big News</h2>
+                            <img src="./Assets/Grossury.jpg" alt="" class="rounded-t-xl h-40 w-full">
+                            <h2 class="title text-xl text-gray-700 font-semibold">Grossary Market</h2>
                             <p class="p-1 m-1 text-justify ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Veritatis, natus quidem quasi
                                 quis iure error at, amet eius quam deleniti earum architecto debitis expedita, soluta
@@ -238,8 +242,8 @@
                                     class="fa-regular fa-folder-open"></i></button>
                         </div>
                         <div class="cointainer_Div p-2 rounded-xl shadow-2xl flex flex-col items-center justify-center">
-                            <img src="./Assets/News.jpg" alt="" class="rounded-t-xl h-40 w-full">
-                            <h2 class="title text-xl text-gray-700 font-semibold">The Big News</h2>
+                            <img src="./Assets/Crus_Oil.jpg" alt="" class="rounded-t-xl h-40 w-full">
+                            <h2 class="title text-xl text-gray-700 font-semibold">Crud Oil Market</h2>
                             <p class="p-1 m-1 text-justify ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Veritatis, natus quidem quasi
                                 quis iure error at, amet eius quam deleniti earum architecto debitis expedita, soluta
@@ -249,8 +253,8 @@
                                     class="fa-regular fa-folder-open"></i></button>
                         </div>
                         <div class="cointainer_Div p-2 rounded-xl shadow-2xl flex flex-col items-center justify-center">
-                            <img src="./Assets/news2.avif" alt="" class="rounded-t-xl h-40 w-full">
-                            <h2 class="title text-xl text-gray-700 font-semibold">The Big News</h2>
+                            <img src="./Assets/steel_Marjket.avif" alt="" class="rounded-t-xl h-40 w-full">
+                            <h2 class="title text-xl text-gray-700 font-semibold">Steel Market</h2>
                             <p class="p-1 m-1 text-justify ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Veritatis, natus quidem quasi
                                 quis iure error at, amet eius quam deleniti earum architecto debitis expedita, soluta
@@ -260,8 +264,8 @@
                                     class="fa-regular fa-folder-open"></i></button>
                         </div>
                         <div class="cointainer_Div p-2 rounded-xl shadow-2xl flex flex-col items-center justify-center">
-                            <img src="./Assets/News.jpg" alt="" class="rounded-t-xl h-40 w-full">
-                            <h2 class="title text-xl text-gray-700 font-semibold">The Big News</h2>
+                            <img src="./Assets/global_Business.jpg" alt="" class="rounded-t-xl h-40 w-full">
+                            <h2 class="title text-xl text-gray-700 font-semibold">Global Business</h2>
                             <p class="p-1 m-1 text-justify ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Veritatis, natus quidem quasi
                                 quis iure error at, amet eius quam deleniti earum architecto debitis expedita, soluta
@@ -271,8 +275,8 @@
                                     class="fa-regular fa-folder-open"></i></button>
                         </div>
                         <div class="cointainer_Div p-2 rounded-xl shadow-2xl flex flex-col items-center justify-center">
-                            <img src="./Assets/news2.avif" alt="" class="rounded-t-xl h-40 w-full">
-                            <h2 class="title text-xl text-gray-700 font-semibold">The Big News</h2>
+                            <img src="./Assets/stock.jpg" alt="" class="rounded-t-xl h-40 w-full">
+                            <h2 class="title text-xl text-gray-700 font-semibold">Stock Market</h2>
                             <p class="p-1 m-1 text-justify ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                                 Veritatis, natus quidem quasi
                                 quis iure error at, amet eius quam deleniti earum architecto debitis expedita, soluta
@@ -744,9 +748,10 @@
                             More <i class="fa-solid fa-angles-right"></i></a></button>
                 </div>
             </div>
-            <div class="blog" id="Blocked">
+            <div class="blog" id="Education">
                 <div class="Home  p-2 m-auto">
-                    <h2 class="text-center text-gray-700 font-semibold text-2xl border-b-gray-500 w-full">Blocked Topic
+                    <h2 class="text-center text-gray-700 font-semibold text-2xl border-b-gray-500 w-full">Education
+                        Topic
                     </h2>
                     <div class="cointainer md:grid md:grid-cols-3 gap-4 m-4">
                         <div class="cointainer_Div p-2 rounded-xl shadow-2xl flex flex-col items-center justify-center">
@@ -825,8 +830,26 @@
 
 
         <!-- Submenu Section Code  -->
-        <section class="submenu">
-            <div class="submenu"></div>
+        <section class="">
+            <div class="submenu  border-l-2  right-0 z-0 m-auto sticky top-0 overflow-y-auto "
+                style="top: var(--header-height)">
+                <h2 class="text-center text-gray-700 font-semibold text-2xl">Headlines</h2>
+                <ul class="overflow-y-auto h-full">
+                    <li><a href="">Importent Headline about stock market crush</a></li>
+                    <li><a href="">Another Importent Headline for Business Explore in Bangladesh</a></li>
+                    <li><a href="">Must Importent Headline for Global Education System</a></li>
+                    <li><a href="">This is Importent Headline about Mrnarel Tresure from South Africa</a></li>
+                    <li><a href="">Today's Importent Headline for Government Tree Method </a></li>
+                    <li><a href="">It's anImportent Headline fot Health and Medicine</a></li>
+                    <li><a href="">Importent Headline for Water problem in Japan</a></li>
+                    <li><a href="">Top most Importent Headline for pakistan Agriculture Problem </a></li>
+                    <li><a href="">All about Importent Headline to know for investment in GP Morgan Company</a></li>
+                    <li><a href="">
+                            Not Less Importent Headline for future Tech Gient</a>
+                    </li>
+
+                </ul>
+            </div>
         </section>
 
     </main>
