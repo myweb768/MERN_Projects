@@ -1,8 +1,8 @@
-* {
+.submenu {
     scrollbar-width: none;
 }
 
-*::-webkit-scrollbar {
+.submenu::-webkit-scrollbar {
     display: none;
 }
 
@@ -27,7 +27,21 @@ menu ul li {
     color: rgb(1, 18, 29);
     border-bottom: 2px solid transparent;
     transition: all .3s ease-in-out;
+    text-align: center;
+}
 
+@media (max-width:780px) {
+    menu ul li {
+        padding: 1rem;
+        margin: auto;
+        transition: all .3s ease-in-out;
+
+    }
+
+    menu ul li:hover {
+        box-shadow: 0px 4px 6px 8px rgba(0, 0, 0, 0.1);
+        ;
+    }
 }
 
 menu ul li:hover {

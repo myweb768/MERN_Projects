@@ -5,7 +5,30 @@ document.documentElement.style.setProperty(
 );
 
 
+let mainMenu = document.querySelector("#main_Menu");
+let mainOpen = document.querySelector("#main-Open");
 
+mainOpen.addEventListener("click", ()=>{
+    mainMenu.classList.toggle("hidden")
+});
+
+
+
+let barOpen = document.querySelector("#sidebarOpen");
+let icon = document.querySelector(".sidbar_Open i");
+let sideBar = document.querySelector(".SideMenu");
+
+barOpen.addEventListener("click", ()=>{
+sideBar.classList.toggle("-translate-x-full");
+
+  let svg = barOpen.querySelector("svg");
+    if(svg.getAttribute("data-icon") === "circle-right") {
+        svg.setAttribute("data-icon", "circle-left");
+    } else {
+        svg.setAttribute("data-icon", "circle-right");
+    }
+
+});
 
 const UL = document.querySelector(".submenu ul");
 

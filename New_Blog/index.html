@@ -16,13 +16,19 @@
 
         <!-- Header Section Code  -->
         <header class=" flex  mx-auto justify-between items-center  max-w-300">
-            <button class="sidbar_Open p-4 m-2 bg-white  md:hidden"><i class="fa-solid fa-circle-right"></i></button>
+            <button
+                class="sidbar_Open flex items-center justify-center  p-1 m-1 text-2xl bg-green-800 text-white  md:hidden hover:scale-110 hover:bg-green-400 hover:text-gray-700 rounded-full transition-transform duration-300 ease-in-out"
+                id="sidebarOpen"><i class="fa-solid fa-circle-right "></i></button>
             <div class="branding flex items-center">
                 <img src="" alt="">
-                <span>Demo</span>
+                <span class="font-semibold text-2xl text-center">H-News</span>
             </div>
-            <menu class="">
-                <ul class="px-4 flex gap-2 items-center justify-center list-none">
+            <menu>
+                <button id="main-Open"
+                    class="px-3 py-2 md:hidden border border-gray-400 rounded-xl  hover:scale-110 transition-all duration-300 ease-in-out font-semibold">Main
+                    Menu<i class="fa-solid fa-arrow-down-short-wide"></i></button>
+                <ul id="main_Menu"
+                    class="hidden md:flex px-4 md:gap-2 items-center justify-center list-none absolute md:static top-full left-0 w-full bg-white shadow-md md:shadow-none transition-all duration-300 ease-in-out">
                     <li><a href="">Home</a></li>
                     <li><a href="">Jobs</a></li>
                     <li><a href="">Carrier</a></li>
@@ -30,7 +36,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </menu>
-            <div class="account flex items-center">
+            <div class="account flex items-center px-2 mx-2">
                 <img src="" alt="">
                 <span>myAccount</span>
             </div>
@@ -40,9 +46,13 @@
     <!-- Main Content code  -->
     <main class="md:grid md:grid-cols-[1fr_4fr_1fr]">
         <!-- Side Menu Section Code -->
-        <section class="SideMenu w-0 md:w-auto transform(-100) md:transform(0)">
-            <div class="sidemenu  p-4 m-2 border-r-2 border-black sticky top-0 left-0 overflow-scroll z-20"
+        <section
+            class="SideMenu fixed md:sticky md:w-auto left-0 z-50  -translate-x-full md:translate-x-0  transition-transform duration-300 ease-in-out bg-white/70">
+            <div class="sidemenu  p-4 m-2 md:border-r-2 border-black sticky top-0 left-0 overflow-scroll z-20"
                 style="top: var(--header-height)">
+                <!-- <button
+                    class="sidbar_Close py-2 m-2 w-full  md:hidden bg-yellow-300 hover:bg-red-600 hover:text-white rounded-xl hover:rounded-full transition-all duration-300 ease-in-out"
+                    id="sidebarClose"><i class="fa-solid fa-circle-left"></i></button> -->
                 <ul class="list-none flex flex-col gap-2">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Favourite">Favourite</a></li>
