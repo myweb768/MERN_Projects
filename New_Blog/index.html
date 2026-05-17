@@ -36,6 +36,9 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </menu>
+            <button id="SearchBtn"
+                class="search_Btn px-2 py-1 mx-2 bg-gray-200 rounded-full text-2xl border border-gray-700 hover:scale-110 hover:bg-black transition-all duration-300 ease-in-out"><i
+                    class="fa-brands fa-sistrix" style="color: rgb(99, 230, 190); font-weight: 600;"></i></button>
             <div class="account flex items-center px-2 mx-2">
                 <img src="" alt="">
                 <span>myAccount</span>
@@ -70,6 +73,28 @@
             </div>
         </section>
 
+
+        <section id="searchSection"
+            class="Search_Section fixed top-18 left-[50%]  translate-x-[-50%] bg-white/80 rounded-xl z-64 shadow-[0px_4px_6px_0px_rgba(0,0,0,0.1)] hidden">
+            <div class="search_Box flex flex-col items-center justify-center w-[90vw] md:w-[50vw] ">
+                <div
+                    class="input_Box flex items-center justify-center p-2 m-2  border border-gray-700 rounded-xl w-[90%]">
+                    <input type="text" placeholder="Search Here...">
+                    <button
+                        class="px-2 mx-1 border border-gray-400 rounded-r-xl hover:text-blue-800 hover:scale-110 transition-all duration-300 ease-in-out hover:bg-gray-400"><i
+                            class="fa-brands fa-sistrix"></i></button>
+                </div>
+                <div class="search_Suggestion">
+                    <ul class="list-none items-center text-center ">
+                        <li>Banking System</li>
+                        <li>Stock Market</li>
+                        <li>Education</li>
+                        <li>Politics</li>
+                        <li>Cooking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <!-- Blog Section Code  -->
         <section class="blog">
             <div class="blog" id="Home">

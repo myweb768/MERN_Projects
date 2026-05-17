@@ -41,6 +41,7 @@ menu ul li {
     menu ul li:hover {
         box-shadow: 0px 4px 6px 8px rgba(0, 0, 0, 0.1);
         ;
+        overflow: hidden;
     }
 }
 
@@ -83,4 +84,36 @@ menu ul li:hover {
 .sidemenu,
 .submenu {
     height: calc(100vh - var(--header-height));
+}
+
+
+.search_Suggestion ul li {
+    cursor: pointer;
+    max-width: 90%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid transparent;
+    margin: .3rem;
+    padding: .3rem;
+    border-radius: .3rem;
+    transition: all .3s ease-in-out;
+}
+
+.search_Suggestion ul li:hover {
+    border: 1px solid gray;
+    color: gray;
+    transform: scale(1.1);
+}
+
+.input_Box input {
+    width: 70%;
+}
+
+.input_Box button {
+    width: 30%;
+}
+
+.input_Box input:focus {
+    outline: none;
 }

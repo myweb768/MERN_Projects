@@ -51,3 +51,12 @@ function autoScroll(){
 }
 
 autoScroll();
+
+
+
+let searchBox =document.querySelector("#searchSection");
+let  searchBoxButton= document.querySelector("#SearchBtn");
+
+searchBoxButton.addEventListener("click", ()=>{
+ searchBox.classList.toggle("hidden");
+  })
