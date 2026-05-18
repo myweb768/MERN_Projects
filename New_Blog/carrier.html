@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrier on H-News</title>
+    <link rel="stylesheet" href="./Assets/fontawesome-free-7.2.0-web/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header_Section  py-3 shadow-2xl  sticky top-0 bg-white">
+
+        <!-- Header Section Code  -->
+        <header class=" flex  mx-auto justify-between items-center  max-w-300">
+            <button
+                class="sidbar_Open flex items-center justify-center  p-1 m-1 text-2xl bg-green-800 text-white  md:hidden hover:scale-110 hover:bg-green-400 hover:text-gray-700 rounded-full transition-transform duration-300 ease-in-out"
+                id="sidebarOpen"><i class="fa-solid fa-circle-right "></i></button>
+            <div class="branding flex items-center">
+                <img src="" alt="">
+                <span class="font-semibold text-2xl text-center">H-News</span>
+            </div>
+            <menu>
+                <button id="main-Open"
+                    class="px-3 py-2 md:hidden border border-gray-400 rounded-xl  hover:scale-110 transition-all duration-300 ease-in-out font-semibold">Main
+                    Menu<i class="fa-solid fa-arrow-down-short-wide"></i></button>
+                <ul id="main_Menu"
+                    class="hidden md:flex px-4 md:gap-2 items-center justify-center list-none absolute md:static top-full left-0 w-full bg-white shadow-md md:shadow-none transition-all duration-300 ease-in-out">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./jobs.html">Jobs</a></li>
+                    <li><a href="./carrier.html">Carrier</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </menu>
+
+            <div class="account flex items-center px-2 mx-2">
+                <img src="" alt="">
+                <span>myAccount</span>
+            </div>
+        </header>
+    </section>
+    <main>
+        <section>
+            <div class="hero h-screen p-16 m-8 bg-blue-400 rounded-xl"></div>
+        </section>
+
+        <section>
+            <div class="topWriter h-screen p-16 m-8 bg-green-400 rounded-xl"></div>
+        </section>
+
+        <section>
+            <div class="testimonials h-screen p-16 m-8 bg-orange-400 rounded-xl"></div>
+        </section>
+    </main>
+    <footer class="h-screen  p-16 mt-8 bg-black "></footer>
+</body>
+
+</html>
