@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Icons/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Calculator</title>
+</head>
+
+<body>
+
+
+    <main class="gradient-element">
+        <div class="myCalc glass_morf">
+            <h2><i class="fa-solid fa-calculator"></i> Web Calculator</h2>
+            <input type="" readonly placeholder="0" id="display">
+            <div class="buttons">
+                <div class="sci_cal">
+                    <button onclick="takeValue('Math.sin(')">sin</button>
+                    <button onclick="takeValue('Math.cos(')">cos</button>
+                    <button onclick="takeValue('Math.tan(')">tan</button>
+                    <button onclick="takeValue('Math.log10(')">log</button>
+                    <button onclick="takeValue('Math.sqrt(')"><i class="fa-solid fa-square-root-variable"></i></button>
+                </div>
+                <div class="buttons_pads">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="deleteValue()">Del</button>
+                    <button onclick="takeValue('%')">%</button>
+                    <button onclick="takeValue('/')"><i class="fa-solid fa-divide"></i></button>
+                    <button onclick="takeValue('7')">7</button>
+                    <button onclick="takeValue('8')">8</button>
+                    <button onclick="takeValue('9')">9</button>
+                    <button onclick="takeValue('*')"><i class="fa-solid fa-times"></i></button>
+                    <button onclick="takeValue('4')">4</button>
+                    <button onclick="takeValue('5')">5</button>
+                    <button onclick="takeValue('6')">6</button>
+                    <button onclick="takeValue('-')">-</button>
+                    <button onclick="takeValue('1')">1</button>
+                    <button onclick="takeValue('2')">2</button>
+                    <button onclick="takeValue('3')">3</button>
+                    <button onclick="takeValue('+')">+</button>
+                    <button onclick="takeValue('0')">0</button>
+                    <button onclick="takeValue('.')">.</button>
+                    <button onclick="calculateResult()">=</button>
+                    <button onclick="shoeSci()">Sci</button>
+                </div>
+                <div class="sci_cal">
+                    <!-- <button onclick="takeValue('Math.pow(')"><i class="fa-solid fa-superscript"></i></button> -->
+                    <button onclick="takeValue('**')"><i class="fa-solid fa-superscript"></i></button>
+                    <button onclick="takeValue('Math.PI')">π</button>
+                    <button onclick="takeValue('Math.E')">e</button>
+                    <button onclick="takeValue('(')">(</button>
+                    <button onclick="takeValue(')')">)</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="./Icons/js/all.min.js"></script>
+</body>
+
+</html>
